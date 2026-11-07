@@ -5,7 +5,8 @@
 <p align="center">Live stock prices in the macOS menu bar.</p>
 
 <p align="center">
-  <img src="docs/screenshot.png" width="768" alt="Apple and Bitcoin with their moves in the menu bar, and below them the popover: Apple's price after hours, its chart for the day, and a watchlist of six symbols">
+  <img src="docs/screenshot-day.png" width="400" alt="NVIDIA's price in the menu bar, and below it the popover: NVIDIA's price after hours, its chart for the day from pre-market to after hours, and a watchlist of NVIDIA and QQQ">
+  <img src="docs/screenshot-year.png" width="400" alt="The same popover with NVIDIA's chart over a year, its 200-day moving average dashed inside bands 5, 10 and 15% either side, the price 8.8% from the average">
 </p>
 
 Portifo Bar keeps the prices you follow in the menu bar: stocks, indexes,
