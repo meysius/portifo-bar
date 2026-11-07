@@ -9,14 +9,9 @@
   <img src="docs/screenshot-year.png" width="400" alt="The same popover with NVIDIA's chart over a year, its 200-day moving average dashed inside bands 5, 10 and 15% either side, the price 8.8% from the average">
 </p>
 
-Portifo Bar keeps the prices you follow in the menu bar: stocks, indexes,
-crypto, currencies and futures, each with its move on the day, kept within
-about half a minute of the market, after hours and overnight included. Click
-it for a chart of any of them and the rest of your watchlist.
-
-It reads the same Yahoo Finance data that powers
-[Portifo](https://github.com/meysius/portifo). It's free, needs no account or
-API key, and is a native Swift app with no dependencies.
+A live, near real-time stream of stock prices in your menu bar, with simple
+charts for keeping track of the stocks you follow. Prices stream from Yahoo
+Finance's WebSocket.
 
 ## Install
 
