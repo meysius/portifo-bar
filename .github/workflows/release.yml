@@ -1,0 +1,29 @@
+# Pushing a tag such as v1.2.0 tests the app, builds it for Apple silicon and
+# Intel, and publishes it as a GitHub release with PortifoBar.zip attached,
+# which install.sh downloads.
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    # Xcode 26, whose actool compiles the .icon.
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Test
+        run: swift test
+
+      - name: Build
+        run: make zip VERSION="${GITHUB_REF_NAME#v}" BUILD="${{ github.run_number }}"
+
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" build/PortifoBar.zip --title "$GITHUB_REF_NAME" --generate-notes

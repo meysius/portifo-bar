@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- The menu bar, and in it a price: an up arrow and two words. -->
+  <rect x="0" y="0" width="1024" height="170" fill="#ffffff" fill-opacity="0.15"/>
+  <path d="M 572 116 L 614 48 L 656 116 Z" fill="#22c55e" stroke="#22c55e" stroke-width="14" stroke-linejoin="round"/>
+  <rect x="690" y="62" width="124" height="44" rx="22" fill="#ffffff" fill-opacity="0.75"/>
+  <rect x="840" y="62" width="76" height="44" rx="22" fill="#ffffff" fill-opacity="0.75"/>
+</svg>
